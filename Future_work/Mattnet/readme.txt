@@ -1,1 +1,1 @@
-下载https://github.com/lichengunc/MAttNet中的项目，置于此处。
+下载[Mattnet](https://github.com/lichengunc/MAttNet)中的项目，置于此处。
