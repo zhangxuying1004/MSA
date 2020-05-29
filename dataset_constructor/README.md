@@ -1,6 +1,6 @@
 # Introduction
 
-## 1 Preparation in advance
+## 1 Preparation
 
 download the project [CaptionMetrics](https://github.com/wangleihitcs/CaptionMetrics), and put it in current directory.  
 we can use this project as a tool kit to calculate the common image caption metrics, bleu, cider, rouge_l, meteor.  
