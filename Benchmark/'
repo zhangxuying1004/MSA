@@ -1,0 +1,66 @@
+function p = genParams()
+
+%% Generate Environment Parameters
+p.useGPU = false;	% CUDA gpu required.
+p.verbose = true;
+p.reCal = true; % set to true if you want to rewrite the existing scores.
+%% Generating salObject parameters
+%% Currently Unused
+% p.salObjSets = {'ft'; 'imgsal'; 'pascal'};
+% p.salObjAlgs = {'sf'; 'gc'; 'pcas'; 'ft'; 'aws'; 'aim'; 'sig'; 'itti'; 'dva'; 'gbvs'; 'sun';'sgp';'sgpms';'dpn'};
+% p.smoothOption = [0;0;0;0;1;1;1;1;1;1;1;1;1;1];
+p.salObjSets = {'imgsal'; 'pascal'};
+p.salObjAlgs =  {'fusion_apf';'fusion_mpf';'fusion_mnf';'fusion_nap'};
+p.smoothOption = [1;1;1;1;1;1];
+
+
+p.gtThreshold = 0.5;
+p.beta = sqrt(0.3);
+p.thNum = 100;
+p.thList = linspace(0, 1, p.thNum);
+
+
+%% Generating fixation parameters
+p.fixationSets = {'bruce';'judd';  'pascal'};
+p.fixationSetsSize = {120; 1003; 850};
+
+% p.fixationAlgs = { 'aim'; 'aws';'sal';'dg2';'cen';'hum'};
+% p.AlgsName = {'AIM'; 'AWS';'SALICON';'DGII';'CEN';'HUMAN'};
+p.fixationAlgs = {'Diverese_Salicon_statistics';};%'dg2';'hum';};
+p.AlgsName = {'Diverse_Salicon_statistics';};% 'DGII';'HUMAN'};
+
+p.sigmaList = 0:0.01:0.08;
+p.sigmaLen = length(p.sigmaList);
+p.defaultSigma = 0.04;
+
+%% Directories
+p.datasetDir = '../datasets';
+p.algMapDir = '../algmaps';
+p.outputDir = '../results2';
+
+%%
+p.salObjSets = p.salObjSets(:);
+p.salObjAlgs = p.salObjAlgs(:);
+
+p.fixationSets = p.fixationSets(:);
+p.fixationAlgs = p.fixationAlgs(:);
+
+%%
+setNum = length(p.salObjSets);
+p.salObjSetSize = zeros(setNum, 1);
+for curSetNum = 1:setNum
+	curSetName = p.salObjSets{curSetNum};
+	fileList = dir(sprintf('%s/imgs/%s/*.jpg', p.datasetDir, curSetName));
+	p.salObjSetSize(curSetNum) = length(fileList);
+end
+
+setNum = length(p.fixationSets);
+p.fixationSetSize = zeros(setNum, 1);
+for curSetNum = 1:setNum
+	curSetName = p.fixationSets{curSetNum};
+	fileList = dir(sprintf('%s/imgs/%s/*.jpg', p.datasetDir, curSetName));
+	p.fixationSetSize(curSetNum) = length(fileList);
+end
+
+end
+

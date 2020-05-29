@@ -1,0 +1,16 @@
+clear; clc;
+fprintf('Now Benchmarking Borji AUC: \n');
+benchBorjiAUC;
+fprintf('\n');
+fprintf('Now Benchmarking Shuffled AUC: \n');
+benchAUC;
+fprintf('\n');
+fprintf('Now Benchmarking Information Gain: \n');
+benchIG;
+fprintf('\n');
+fprintf('Now Benchmarking IG over DeepGazeII: \n');
+benchIG_DG2;
+fprintf('\n');
+fprintf('Now Benchmarking NSS: \n');
+benchNSS;
+fprintf('\n');
