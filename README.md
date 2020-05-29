@@ -14,7 +14,8 @@ This repo consists of five folders as follows:
 
 ### 1.1 dataset_constructor
 
-The dataset_constructor folder is used to build a dataset which is based on COCO train dataset and made up of multiple modes/topics. In this folder, the sub_folder caption_metrics provides the compute methods of image caption metrics which are used in coco_mode.py and coco_topic.py; the utils.py file defines the parameters in coco_mode.py and coco_topic.py; the coco.py is used to build diverse/consistent mode dataset according to the captions average CIDEr score, and the coco2.py is used to build multiple topics dataset according to caption text clustering.  
+The dataset_constructor folder is used to build a dataset which is based on COCO train dataset and made up of multiple modes/topics.  
+In this folder, the sub_folder caption_metrics provides the compute methods of image caption metrics which are used in coco_mode.py and coco_topic.py; the utils.py file defines the parameters in coco_mode.py and coco_topic.py; the coco.py is used to build diverse/consistent mode dataset according to the captions average CIDEr score, and the coco2.py is used to build multiple topics dataset according to caption text clustering.  
 
 ### 1.2 mode_classifier
 
