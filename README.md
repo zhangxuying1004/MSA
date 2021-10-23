@@ -1,5 +1,6 @@
 # MSA(Mode-Sensitive Attention)
-This repository contains the reference code for the paper [_Exploring Language Prior for Mode-Sensitive Visual Attention Modeling._ (ACM MultiMedia 2020)](https://dl.acm.org/doi/abs/10.1145/3394171.3414008).
+This repository contains the reference code for our paper _Exploring Language Prior for Mode-Sensitive Visual Attention Modeling_.  
+You can click [Paper link](https://github.com/zhangxuying1004/MSA/blob/master/files/ACM%20MM2020_Exploring%20Language%20Prior%20for%20Mode-Sensitive%20Visual%20Attention%20Modeling.pdf) to download our paper or click [Presentation link](https://dl.acm.org/doi/abs/10.1145/3394171.3414008) to watch the presentation we made in ACM MultiMedia 2020.  
 
 ## 1 Introduction
 
