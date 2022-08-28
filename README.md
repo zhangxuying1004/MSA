@@ -1,6 +1,8 @@
 # MSA(Mode-Sensitive Attention)
 This repository contains the reference code for our paper _Exploring Language Prior for Mode-Sensitive Visual Attention Modeling_. You can click [Paper link](https://drive.google.com/file/u/0/d/1bzKWpMIF4FxxJzKxTIqhBrpCgpIP-lhb/view) to download our paper or click [Presentation link](https://dl.acm.org/doi/abs/10.1145/3394171.3414008) to watch the presentation we made in ACM MultiMedia 2020.   
-
+<p align="center">
+  <img src="files/MSA.png" alt="Mode-Sensitive Attention" width="800"/>
+</p>
 If you have any questions about our work, feel free to email me via zhangxuying1004@gmail.com.  
 If our work is heleful to you or gives some inspiration to you, please star this project and cite our paper. Thank you!  
 ```
