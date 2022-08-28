@@ -5,6 +5,7 @@ This repository contains the reference code for our paper _Exploring Language Pr
 </p>
 If you have any questions about our work, feel free to email me via zhangxuying1004@gmail.com.  
 If our work is heleful to you or gives some inspiration to you, please star this project and cite our paper. Thank you!  
+
 ```
 @inproceedings{sun2020exploring,
   title={Exploring language prior for mode-sensitive visual attention modeling},
@@ -14,7 +15,6 @@ If our work is heleful to you or gives some inspiration to you, please star this
   year={2020}
 }
 ```
-
 ## 1 Introduction
 
 This repo is the implementation of "Exploring Language Prior for Mode-Sensitive Visual Attention Modeling".  
